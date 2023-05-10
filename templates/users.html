@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Users</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Students</th>
+        <th>Score</th>
+        <th>Level</th>
+      </tr>
+      {% for user in userDetails %}
+      <tr>
+        <td> {{user[0]}} </td>
+        <td> {{user[1]}} </td>
+        <td> {{user[2]}} </td>
+        <td> {{user[3]}} </td>
+        <td> {{user[4]}} </td>
+      </tr>
+      {% endfor %}
+    </table>
+    <div>
+      {{ graph_div|safe }}
+    </div>
+  </body>
+</html>
